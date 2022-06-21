@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:weightSum="10"
+
+        >
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3"
+            app:srcCompat="@mipmap/main_icon_foreground" />
+
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+
+        <TextView
+            android:id="@+id/Hello_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:paddingStart="20dp"
+            android:text="@string/phone_verification"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+        <TextView
+            android:id="@+id/tag_state_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="@string/Description_tag"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            tools:ignore="RtlSymmetry" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:maxLength="1"
+                android:inputType="number"
+                android:layout_marginStart="6dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:maxLength="1"
+                android:inputType="number"
+                android:layout_marginStart="6dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:maxLength="1"
+                android:inputType="number"
+                android:layout_marginStart="6dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:maxLength="1"
+                android:inputType="number"
+                android:layout_marginStart="6dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:maxLength="1"
+                android:inputType="number"
+                android:layout_marginStart="6dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                 android:gravity="center"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:maxLength="1"
+                android:inputType="number"
+                android:layout_marginStart="6dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                 android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_weight="0.3"
+            android:background="@drawable/input_field_design"
+
+            android:text="@string/verify_phone_number"
+            android:textSize="20sp"
+            app:backgroundTint="#667d9f" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="20dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_phone_number"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginStart="20dp"
+
+                />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="17sp"
+                android:text="@string/send_again"
+                android:textStyle="bold"
+                android:textColor="#667d9f"
+
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

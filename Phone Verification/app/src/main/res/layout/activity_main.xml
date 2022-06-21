@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:weightSum="10"
+
+        >
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            app:srcCompat="@mipmap/main_icon_foreground" />
+
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+
+        <TextView
+            android:id="@+id/Hello_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="20dp"
+            android:text="@string/phone_verification"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+        <TextView
+            android:id="@+id/tag_state_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:text="@string/Description_tag"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            tools:ignore="RtlSymmetry" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/input_field_design"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                app:ccp_defaultNameCode="PK"
+                android:paddingStart="10dp"
+                />
+
+            <EditText
+                android:id="@+id/phoneno_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:importantForAutofill="no"
+                android:textSize="30sp"
+                android:inputType="phone"
+                android:textColor="#C6C0C0"
+                android:textColorHint="#A19C9C" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+
+        <Button
+            android:id="@+id/code_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_weight="0.3"
+            android:background="@drawable/input_field_design"
+
+            android:text="@string/button_line"
+            android:textSize="20sp"
+            app:backgroundTint="#667d9f" />
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

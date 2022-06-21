@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Phone Verification</string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="Description_tag">We need to register your phone number before gettting started!</string>
+    <string name="button_line">Send The Code</string>
+    <string name="send_again">Send Again</string>
+    <string name="edit_phone_number">Edit Phone Number?</string>
+    <string name="verify_phone_number">Verify Phone Number</string>
+</resources>
